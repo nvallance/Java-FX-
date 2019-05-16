@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.StackPane?>
+<StackPane fx:controller="MainController" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <fx:include fx:id="list" source="playerslist.fxml"/>
+    <fx:include fx:id="addPlayer" source="add.fxml"/>
+    <fx:include fx:id="login" source="login.fxml"/>
+    <fx:include fx:id="weightLift" source="weight-lift.fxml"/>
+</StackPane>

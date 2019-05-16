@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PlayersList">
+    <children>
+        <ListView fx:id="listData" layoutX="14.0" layoutY="14.0" prefHeight="332.0" prefWidth="310.0" />
+
+        <Label fx:id="playerName" alignment="CENTER" layoutX="340.0" layoutY="10.0" prefHeight="30.0" prefWidth="250.0" text="Lifter Name" textFill="#0e9a35">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="340.0" layoutY="45.0" prefHeight="17.0" prefWidth="100.0" text="Gender" />
+        <Label layoutX="340.0" layoutY="70.0" prefHeight="17.0" prefWidth="100.0" text="Weight" />
+        <Label layoutX="340.0" layoutY="95.0" prefHeight="17.0" prefWidth="100.0" text="Bench Press 1" />
+        <Label layoutX="340.0" layoutY="120.0" prefHeight="17.0" prefWidth="100.0" text="Bench Press 2" />
+        <Label layoutX="340.0" layoutY="145.0" prefHeight="17.0" prefWidth="100.0" text="Bench Press 3" />
+        <Label layoutX="340.0" layoutY="170.0" prefHeight="17.0" prefWidth="100.0" text="Squat 1" />
+        <Label layoutX="340.0" layoutY="195.0" prefHeight="17.0" prefWidth="100.0" text="Squat 2" />
+        <Label layoutX="340.0" layoutY="220.0" prefHeight="17.0" prefWidth="100.0" text="Squat 3" />
+        <Label layoutX="340.0" layoutY="245.0" prefHeight="17.0" prefWidth="100.0" text="Deadlift 1" />
+        <Label layoutX="340.0" layoutY="270.0" prefHeight="17.0" prefWidth="100.0" text="Deadlift 2" />
+        <Label layoutX="340.0" layoutY="295.0" prefHeight="17.0" prefWidth="100.0" text="Deadlift 3" />
+
+        <Label fx:id="gender" layoutX="450.0" layoutY="45.0" prefHeight="17.0" prefWidth="140.0" text="Gender" />
+        <Label fx:id="weight" layoutX="450.0" layoutY="70.0" prefHeight="17.0" prefWidth="140.0" text="Weight" />
+        <Label fx:id="bp1" layoutX="450.0" layoutY="95.0" prefHeight="17.0" prefWidth="140.0" text="Bench Press 1" />
+        <Label fx:id="bp2" layoutX="450.0" layoutY="120.0" prefHeight="17.0" prefWidth="140.0" text="Bench Press 2" />
+        <Label fx:id="bp3" layoutX="450.0" layoutY="145.0" prefHeight="17.0" prefWidth="140.0" text="Bench Press 3" />
+        <Label fx:id="sq1" layoutX="450.0" layoutY="170.0" prefHeight="17.0" prefWidth="140.0" text="Squat 1" />
+        <Label fx:id="sq2" layoutX="450.0" layoutY="195.0" prefHeight="17.0" prefWidth="140.0" text="Squat 2" />
+        <Label fx:id="sq3" layoutX="450.0" layoutY="220.0" prefHeight="17.0" prefWidth="140.0" text="Squat 3" />
+        <Label fx:id="dl1" layoutX="450.0" layoutY="245.0" prefHeight="17.0" prefWidth="140.0" text="Deadlift 1" />
+        <Label fx:id="dl2" layoutX="450.0" layoutY="270.0" prefHeight="17.0" prefWidth="140.0" text="Deadlift 2" />
+        <Label fx:id="dl3" layoutX="450.0" layoutY="295.0" prefHeight="17.0" prefWidth="140.0" text="Deadlift 3" />
+        <Button fx:id="startLift" layoutX="419.0" layoutY="329.0" mnemonicParsing="false" onAction="#startLift" prefHeight="25.0" prefWidth="92.0" text="Start A Lift" />
+        <Button fx:id="addPlayer" layoutX="419.0" layoutY="361.0" mnemonicParsing="false" onAction="#addPlayer" prefHeight="25.0" prefWidth="92.0" text="Add player" />
+
+        <Button layoutX="70.0" layoutY="361.0" mnemonicParsing="false" onAction="#editPlayer" text="Edit Player" />
+        <Button layoutX="186.0" layoutY="361.0" mnemonicParsing="false" onAction="#deletePlayer" text="Remove Player" />
+    </children>
+</AnchorPane>
